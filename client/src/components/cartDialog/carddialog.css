@@ -1,0 +1,209 @@
+.dialog-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.dialog-card-left{
+    display: flex;
+    height: 35vh;
+    width: 45%;
+    background: rgb(238, 239, 239);
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.dialog-image-cotainer{
+    display: flex;
+    height: 85%;
+    width: 85%;
+    background: green;
+    align-items: center;
+    justify-content: center;
+}
+.dialog-image-cotainer img{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.dialog-right{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    width: 20vw;
+
+    align-items: start;
+    gap: 5px;
+}
+.dialog-right span:nth-of-type(1){
+   font-size: 20px;
+   font-weight: 600;
+
+}
+.dialog-right p{
+    font-size: 10px;
+    color: rgb(170, 169, 169);
+}
+.dialog-right span:nth-of-type(2){
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 145, 0);
+}
+.dialog-right span:nth-of-type(3)
+ {
+    font-size: 12px;
+    font-weight: 500;
+    color: green;
+ }
+ .quant-div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+ }
+ .quant-button{
+    display: flex;
+    height: 1.7rem;
+    width: 6rem;
+    border: 1px solid rgb(190, 189, 189);
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+ }
+ .quant-button button{
+    display: flex;
+    height: 1.4rem;
+    width: 2.5rem;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    font-size: 20px;
+    font-weight: 600;
+ }
+ .dialog-cart-btn{
+    display: flex;
+    height: 2rem;
+    width: 6rem;
+    background: rgb(40, 106, 40);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+ }
+ .dialog-icon{
+    height: 1.5rem;
+    width: 2rem;
+    color: rgb(142, 234, 246);
+ }
+ .dialog-right span:nth-of-type(4){
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(60, 59, 59);
+ }
+
+ @media (max-width:700px) {
+    .dialog-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }  
+    .dialog-card-left{
+        display: flex;
+        height: 35vh;
+        width: 90%;
+        background: rgb(231, 233, 233);
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .dialog-image-cotainer{
+        display: flex;
+        height: 85%;
+        width: 85%;
+        
+        background: green;
+        align-items: center;
+        justify-content: center;
+    }
+    .dialog-right{
+        display: flex;
+        flex-direction: column;
+        height: 35vh;
+        width: 80%;
+        align-items: center;
+      
+        gap: 5px;
+    }
+    .dialog-right span:nth-of-type(1){
+        font-size: 30px;
+        font-weight: 600;
+     
+     }
+     .dialog-right p{
+         font-size: 15px;
+         color: rgb(170, 169, 169);
+     }
+     .dialog-right span:nth-of-type(2){
+         font-size: 25px;
+         font-weight: 600;
+         color: rgb(255, 145, 0);
+     }
+     .dialog-right span:nth-of-type(3)
+      {
+         font-size: 15px;
+         font-weight: 500;
+         color: green;
+      }
+      .quant-div{
+         display: flex;
+         align-items: center;
+         gap: 5px;
+     
+      }
+      .quant-button{
+         display: flex;
+         height: 2.5rem;
+         width: 8rem;
+         border: 1px solid rgb(190, 189, 189);
+         align-items: center;
+         justify-content: center;
+         border-radius: 3px;
+      }
+      .quant-button button{
+         display: flex;
+         height: 2rem;
+         width: 3.5rem;
+         border: none;
+         align-items: center;
+         justify-content: center;
+         background: none;
+         font-size: 25px;
+         font-weight: 600;
+      }
+      .dialog-cart-btn{
+         display: flex;
+         height: 3rem;
+         width: 8rem;
+         background: rgb(40, 106, 40);
+         color: white;
+         align-items: center;
+         justify-content: center;
+         border: none;
+         border-radius: 5px;
+         font-size: 18px;
+      }
+      .dialog-icon{
+         height: 2rem;
+         width: 2rem;
+         color: rgb(142, 234, 246);
+      }
+      .dialog-right span:nth-of-type(4){
+         font-size: 15px;
+         font-weight: 500;
+         color: rgb(60, 59, 59);
+      }
+ }

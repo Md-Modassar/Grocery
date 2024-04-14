@@ -1,0 +1,229 @@
+.checkout-div{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    height: 84vh;
+    width: 100%;
+ 
+    align-items: center;
+
+}
+.checkout-container{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+.checkout-title{
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 100%;
+    background: green;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 1px;
+
+}
+.checkout-left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+ 
+    margin-top: 1px;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+.checkout-right{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+ 
+    align-items: center;
+    justify-content: center;
+}
+.top-input{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+
+}
+.top-input input{
+    height: 2rem;
+    width: 15rem;
+    border-radius: 5px;
+    border: 1px solid rgb(181, 180, 180);
+    font-size: 15px;
+
+}
+.midl-input{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.midl-input input{
+    height: 2rem;
+    width: 15rem;
+    border-radius: 5px;
+    border: 1px solid rgb(181, 180, 180);
+    font-size: 15px;
+
+}
+.dow-input{
+    height: 2rem;
+    width: 30.5rem;
+    border: 1px solid rgb(181, 180, 180);
+    font-size: 15px;
+    border-radius: 5px;
+}
+.checkout-left span{
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+
+}
+.checkout-right button{
+    height: 2.5rem;
+    width: 10rem;
+    background: green;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.checkout-right button:hover{
+    height: 2.5rem;
+    width: 10rem;
+    background:white;
+    color: green;
+    border: 1px solid green;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.checkout-right-container{
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    width: 18rem;
+    align-items: center;
+    border: 1px solid gainsboro;
+}
+.checkout-right-container-title{
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    background: rgb(236, 237, 236);
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.checkout-right-container-down{
+    display: flex;
+    flex-direction: column;
+    height: 9.5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+   
+}
+.checkout-span-div1{
+    display: flex;
+    height:2rem ;
+    width: 95%;
+    border-bottom:1px solid gainsboro ;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.checkout-span-div2{
+    display: flex;
+    height:3rem ;
+    width: 95%;
+    border-bottom:1px solid gainsboro ;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.checkout-span-div3{
+    display: flex;
+    height:2.5rem ;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+@media (max-width:700px) {
+    .checkout-container{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        width: 100%;
+    
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top-input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    
+    
+    }
+    .top-input input{
+        height: 2rem;
+        width: 17rem;
+        border-radius: 5px;
+        border: 1px solid rgb(181, 180, 180);
+        font-size: 15px;
+    
+    }
+    .midl-input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .midl-input input{
+        height: 2rem;
+        width: 17rem;
+        border-radius: 5px;
+        border: 1px solid rgb(181, 180, 180);
+        font-size: 15px;
+    
+    }
+    .dow-input{
+        height: 2rem;
+        width: 18rem;
+        border: 1px solid rgb(181, 180, 180);
+        font-size: 15px;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width:700px) and (max-width:1024px){
+    .checkout-container{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        width: 100%;
+    
+        align-items: center;
+        justify-content: center;
+    }
+
+}

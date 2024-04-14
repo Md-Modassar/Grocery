@@ -1,0 +1,76 @@
+.signup{
+   display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.sigup-center-div{
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 20rem;
+    background: rgb(234, 244, 247);
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    border: 1.5px solid rgb(237, 236, 236);
+  
+ 
+}
+.sigup-center-div img{
+    display: flex;
+    height: 10rem;
+    width: 12rem;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+}
+.sigup-center-top{
+    display: flex;
+    height: 25%;
+    width: auto;
+  
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.sigup-center-div span:nth-of-type(1){
+    font-size: 25px;
+    font-weight: 700;
+}
+.sigup-center-div span:nth-of-type(2){
+    font-size: 13px;
+    font-weight: 500;
+    color: grey;
+}
+.sigup-center-div input{
+    height: 2rem;
+    width: 15rem;
+    border-radius: 5px;
+    border: 1px solid rgb(189, 188, 188);
+}
+.sigup-center-div button{
+    height: 2rem;
+    width: 15rem;
+    font-size: 13px;
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 5px;
+}
+.s-down-div span:nth-of-type(1){
+    font-size: 11px;
+
+}
+.s-down-div span:nth-of-type(2)
+ {
+    color: rgb(103, 202, 252);
+    cursor: pointer;
+ }
+ .s-down-div span:nth-of-type(2):hover{
+    color: white;
+ }

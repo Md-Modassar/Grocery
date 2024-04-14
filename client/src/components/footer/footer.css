@@ -1,0 +1,166 @@
+.footer{
+    display: flex;
+    height: 50vh;
+    width: 98vw;
+    background: rgb(253, 253, 253);
+    color: rgb(10, 10, 10);
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.footer-category{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 45%;
+    align-items: start;
+}
+.footer-cate-title{
+    font-size: 45px;
+    font-weight: 600;
+    color: green;
+  
+}
+.footer-category-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-socal-midea{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 45%;
+ 
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+
+}
+.footer-logo{
+    display: flex;
+    height: 10rem;
+    width: 12rem;
+    margin-top: 0px;
+    padding: 0px;
+
+}
+.googleplay{
+    display: flex;
+    height: 2.5rem;
+    width: 8rem;
+    border: 1px solid rgb(248, 245, 245);
+    align-items: center;
+    gap: 2px;
+    border-radius: 5px;
+
+}
+.icon{
+  height: 2rem;
+  width: 2rem;
+}
+.googlespan{
+    display: flex;
+    flex-direction: column;
+}
+.googlespan span:nth-of-type(1){
+    font-size: 8px;
+    font-weight: 600;
+
+}
+.googlespan span:nth-of-type(2){
+    font-weight: 600;
+}
+.appleStore{
+    display: flex;
+    height: 2.5rem;
+    width: 8rem;
+    border: 1px solid rgb(255, 253, 253);
+    align-items: center;
+    gap: 2px;
+    border-radius: 5px;
+}
+.a-icon{
+    height: 2rem;
+    width: 2rem; 
+}
+.apple-div{
+    display: flex;
+    flex-direction: column;
+
+}
+.apple-div span:nth-of-type(1){
+    font-size: 10px;
+}
+.apple-div span:nth-of-type(2){
+    font-weight: 600;
+}
+.a-p-store{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.f-icon1{
+    height: 2rem;
+    width: 2rem;
+}
+.i-icon{
+    height: 2rem;
+    width: 2rem;
+}
+.t-icon{
+    height: 2rem;
+    width: 2rem;
+}
+.l-icon{
+    height: 2rem;
+    width: 2rem;
+}
+
+@media (max-width:700px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+       
+    }
+    .footer-category{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        width: 90%;
+        align-items: start;
+     
+    }
+    .footer-cate-title{
+        font-size: 30px;
+        font-weight: 600;
+        color: green;
+      
+    }
+    .footer-socal-midea{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        width: 90%;
+     
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+@media (min-width:700px) and (max-width:1024px){
+    .footer{
+        display: flex;
+    
+        height: auto;
+        width: auto;
+       
+    }
+}

@@ -1,0 +1,160 @@
+.banner{
+    display: flex;
+    height: 50vh;
+    width: 100wh;
+    align-items: center;
+    justify-content: center;
+}
+.banner-left{
+    display: flex;
+    height: 90%;
+    width: 60%;
+  
+}
+.left-image{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.banner-right{
+    display: flex;
+    height: 90%;
+    width: 30%;
+    align-items: center;
+  
+}
+.banner-right-top{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.banner-right-down{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+ 
+    
+}
+.top-image{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.down-image{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+@media (max-width:700px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+    }
+    .banner-left{
+        display: flex;
+        height: 50%;
+        width: 90%;
+        object-fit: cover;
+      
+    }
+    .left-image{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .banner-right{
+        display: flex;
+        height: 45%;
+        width: 90%;
+        align-items: center;  
+    }
+    .banner-right-top{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        align-items: center;
+    }
+    .banner-right-down{   
+        height:100% ;
+        width: 50%;
+        align-items: center; 
+    }
+    .top-image{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .down-image{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:700px) and (max-width:1024px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+    }
+    .banner-left{
+        display: flex;
+        height: 50%;
+        width: 90%;
+        object-fit: cover;
+      
+    }
+    .left-image{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+    .banner-right{
+        display: flex;
+        height: 45%;
+        width: 90%;
+        align-items: center;  
+    }
+    .banner-right-top{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        align-items: center;
+    }
+    .banner-right-down{   
+        height:100% ;
+        width: 50%;
+        align-items: center; 
+    }
+    .top-image{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .down-image{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,135 @@
+.category{
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    width: 98.5vw;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+   
+}
+.category span{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(34, 141, 34);
+}
+.category-container{
+    display: flex;
+    height: auto;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+.cate-cart{
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    width: 6rem;
+ 
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    
+    
+}
+.cate-cart img{
+    height: 4.5rem;
+    width: 6rem;
+    border-radius: 10px;
+}
+.cate-cart span{
+    font-size: 15px;
+    font-weight: 600;
+}
+@media (max-width:700px) {
+    .category{ 
+        height: auto;
+        width: auto;
+       
+    }
+    .category span{
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(34, 141, 34);
+    }
+    .category-container{
+        display: flex;
+        height: auto;
+        width: 99%;
+        align-items: center;
+        justify-content: space-between;
+        overflow: auto;
+     
+    
+    
+    }
+    .cate-cart{
+        display: flex;
+        flex-direction: column;
+        height: 6rem;
+        width: 7rem;
+        align-items: center;
+        justify-content: center;
+       
+        
+        gap: 2px;
+        
+        
+    }
+    .cate-cart img{
+        height: 3rem;
+        width: 4rem;
+        border-radius: 5px;
+    }
+    .cate-cart span{
+        font-size: 8px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width:700px) and (max-width:1024px){
+    .category{ 
+        margin-top: 100px;
+        height: auto;
+        width: auto;
+       
+    }
+    .category span{
+        font-size: 25px;
+        font-weight: 600;
+        color: rgb(34, 141, 34);
+    }
+    .category-container{
+        display: flex;
+        height: auto;
+        width: 99%;
+        align-items: center;
+        justify-content: space-between;
+        overflow: auto;
+     
+    
+    
+    }
+    .cate-cart{
+        display: flex;
+        flex-direction: column;
+        height: 8rem;
+        width: 10rem;
+        align-items: center;
+        justify-content: center;
+       
+        
+        gap: 2px;
+        
+        
+    }
+    .cate-cart img{
+        height: 5rem;
+        width: 6rem;
+        border-radius: 5px;
+    }
+    .cate-cart span{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

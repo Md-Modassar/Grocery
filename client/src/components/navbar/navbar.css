@@ -1,0 +1,133 @@
+
+  .slider-container{
+   align-items: center;
+   justify-content: center;
+   height: 85vh;
+   width: 100%;
+   padding: 0px 0px;
+
+
+  }
+  .slid-image{
+    display: flex;
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .image-container{
+    display: flex;
+    height: 84vh;
+    width: 100%;
+    background: rgb(150, 48, 37);
+    align-items: center;
+    justify-content: center;
+
+  }
+  .image-container2{
+    display: flex;
+    height: 84vh;
+    width: 100%;
+    background: rgb(243, 245, 243);
+    align-items: center;
+    justify-content: center;
+
+  }
+  .image-container1{   
+    display: flex;
+    height: 84vh;
+    width: 100%;
+    background: rgb(31, 181, 38);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width:700px) {
+    .slider-container{
+      align-items: center;
+      justify-content: center;
+      height: 26vh;
+      width: auto;
+      padding: 0px 0px;   
+     }
+     .image-container{
+      display: flex;
+      height: 100%;
+      width: auto;
+      background: rgb(150, 48, 37);
+      align-items: center;
+      justify-content: center;
+  
+    }
+    .image-container2{
+      display: flex;
+      height: auto;
+      width: auto;
+      background: rgb(243, 245, 243);
+      align-items: center;
+      justify-content: center;
+  
+    }
+    .image-container1{   
+      display: flex;
+      height: auto;
+      width: auto;
+      background: rgb(31, 181, 38);
+      align-items: center;
+      justify-content: center;
+    }
+    .slid-image{
+      display: flex;
+      height: 90%;
+      width: 90%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  @media (min-width:700px) and (max-width:1024px){
+    .slider-container{
+      align-items: center;
+      justify-content: center;
+      height: 26vh;
+      width: auto;
+      padding: 0px 0px;   
+     
+     }
+     .image-container{
+      display: flex;
+      height: 100%;
+      width: auto;
+      background: rgb(150, 48, 37);
+      align-items: center;
+      justify-content: center;
+  
+    }
+    .image-container2{
+      display: flex;
+      height: auto;
+      width: auto;
+      background: rgb(243, 245, 243);
+      align-items: center;
+      justify-content: center;
+  
+    }
+    .image-container1{   
+      display: flex;
+      height: auto;
+      width: auto;
+      background: rgb(31, 181, 38);
+      align-items: center;
+      justify-content: center;
+    }
+    .slid-image{
+      display: flex;
+      height: 90%;
+      width: 90%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+
+  

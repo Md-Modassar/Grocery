@@ -1,0 +1,29 @@
+.order-product-container{
+    display: flex;
+    height: 15vh;
+    width: 95%;
+    background: rgb(202, 201, 201);
+    align-items: center;
+    justify-content: space-between;
+}
+.order-product-image{
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    margin-left: 5px;
+
+}
+.order-product-image image{
+    display: flex;
+    height: 100%;
+    width: 100%;
+   
+}
+.order-product-name-price{
+    display: flex;
+    flex-direction: column;
+}
+.order-product-amount{
+    display: flex;
+    margin-right: 10px;
+}

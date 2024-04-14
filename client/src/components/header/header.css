@@ -1,0 +1,440 @@
+.header{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px solid green ;
+    position: relative;
+    
+   
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.header-left img{
+  height: 10rem;
+  width: 15rem;
+}
+.cate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 10rem;
+    background: rgb(227, 249, 245);
+    border-radius: 20px;
+    gap: 5px;
+    
+}
+.icon1{
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    color: rgb(20, 165, 20);
+    cursor: pointer;
+}
+.icon1:hover{
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    color: rgb(212, 218, 212);
+    cursor: pointer;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 16rem;
+    border: 1px solid rgb(100, 237, 82);
+    border-radius: 20px;
+    gap: 5px;
+}
+.search input{
+    display: flex;
+    border: none;
+    height: 2.3rem;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.searchicon{
+    display: flex;
+    height: 2rem;
+    width: 3rem;
+    color: rgb(78, 237, 78);
+    cursor: pointer;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-right button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 6rem;
+    background: rgb(14, 116, 14);
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header-right button:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 6rem;
+    background: rgb(246, 247, 246);
+    border: 2px solid green;
+    font-size: 20px;
+    color: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cart{
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.cart span{
+    display: flex;
+   position: absolute;
+   left: 5.3rem;
+   bottom: 1rem;
+   height: 2rem;
+   width: 2rem;
+   background: green;
+   align-items: center;
+   justify-content: center;
+   border-radius: 100%;
+   color: white;
+   
+}
+.iconcart{
+
+    height: 3rem;
+    width: 8rem;
+    color: rgb(12, 120, 12);
+}
+.profile{
+    display: flex;
+    height: 3rem;
+    width: 4rem;
+    color: green;
+    cursor: pointer;
+ 
+}
+.headre-category-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.2);
+    top: 80px;
+    left: 150px;
+    gap: 5px;
+}
+.header-cate-cart{
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    width: auto;
+    border-radius: 10px;
+    justify-content: start;
+    gap: 5px;
+}
+.header-cate-cart:hover{
+    background: green;
+}
+.header-cate-cart img{
+    height: 2.5rem;
+    width: 4rem;
+    border-radius: 30%;
+}
+.header-cate-cart span{
+    color: white;
+}
+.div-profile{
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    width: 9rem;
+    background: rgb(214, 214, 214);
+    color: black;
+    position: absolute;
+    align-items: start;
+    top: 4.65rem;
+    z-index: 300;
+    gap: 15px;
+    left: 61.6rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.div-profile span{
+    cursor: pointer;
+}
+.div-profile span:hover{
+    color: white;
+}
+@media (max-width:700px) {
+
+    .header{
+        height: 10vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;   
+       
+    }
+    .header-left{
+      
+        gap: 1px;
+    }
+    .header-left img{
+        height: 7rem;
+        width: 8rem;
+        margin: 0;
+
+      }
+      .cate{
+        display: flex;
+        height: 1.6rem;
+        width: 4rem;
+        background: rgb(227, 249, 245);
+        border-radius: 20px;
+        gap: 2px;
+        
+    }
+    .cate span{
+        font-size: 8px;
+    }
+    .icon1{
+        display: flex;
+        height: 1rem;
+        width: 1rem;
+        color: rgb(20, 165, 20);
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1.5rem;
+        width: 5rem;
+        border: 1px solid rgb(100, 237, 82);
+        border-radius: 20px;
+        gap: 2px;
+    }
+    .search input{
+        display: flex;
+        border: none;
+        height: 1rem;
+        width: 70%;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+    .searchicon{
+        display: flex;
+        height: 1rem;
+        width: 1rem;
+        color: rgb(78, 237, 78);
+    }
+    .header-right button{
+        display: flex;
+     align-items: center;
+        height: 1rem;
+        width: 3rem;
+        background: rgb(14, 116, 14);
+        border: none;
+        font-size: 10px;
+        color: white;
+        border-radius: 3px;
+    }
+    .cart{
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        position: relative;
+    }
+    .cart span{
+        display: flex;
+       position: absolute;
+       left: 1rem;
+       bottom: 1rem;
+       height: 1rem;
+       width: 1rem;
+       font-size: 10px;
+       background: green;
+       align-items: center;
+       justify-content: center;
+       border-radius: 100%;
+       color: white;
+       
+    }
+    .iconcart{
+    
+        height: 2rem;
+        width: 2rem;
+        color: rgb(12, 120, 12);
+    }
+    .profile{
+        display: flex;
+        height: 3rem;
+        width: 4rem;
+        color: green;
+    }
+    .div-profile{
+        display: flex;
+        flex-direction: column;
+        height: 6rem;
+        width: 22rem;
+        background: rgb(214, 214, 214);
+        color: black;
+        position: absolute;
+        align-items: start;
+        top: 5rem;
+        z-index: 300;
+        gap: 15px;
+        left: 0;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width:700px) and (max-width:1024px) {
+    .header{
+        height: 10vh;
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+        
+       
+    }
+    .header-left{
+      
+        gap: 1px;
+    }
+    .header-left img{
+        height: 10rem;
+        width: 12rem;
+        margin: 0;
+
+      }
+      .cate{
+        display: flex;
+        height: 2rem;
+        width: 6rem;
+        background: rgb(227, 249, 245);
+        border-radius: 20px;
+        gap: 2px;
+        
+    }
+    .cate span{
+        font-size: 8px;
+    }
+    .icon1{
+        display: flex;
+        height: 1.5rem;
+        width: 1.5rem;
+        color: rgb(20, 165, 20);
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2rem;
+        width: 12rem;
+        border: 1px solid rgb(100, 237, 82);
+        border-radius: 20px;
+        gap: 2px;
+    }
+    .search input{
+        display: flex;
+        border: none;
+        height: 1.5rem;
+        width: 70%;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+    .searchicon{
+        display: flex;
+        height: 1.5rem;
+        width: 1.5rem;
+        color: rgb(78, 237, 78);
+    }
+    .header-right button{
+        display: flex;
+        align-items: center;
+        height: 1rem;
+        width: 3rem;
+        background: rgb(14, 116, 14);
+        border: none;
+        font-size: 10px;
+        color: white;
+        border-radius: 3px;
+    }
+    .cart{
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        position: relative;
+    }
+    .cart span{
+        display: flex;
+       position: absolute;
+       left: 2rem;
+       bottom: 2rem;
+       height: 2rem;
+       width: 2rem;
+       font-size: 20px;
+       background: green;
+       align-items: center;
+       justify-content: center;
+       border-radius: 100%;
+       color: white;
+       
+    }
+    .iconcart{
+    
+        height: 3rem;
+        width: 3rem;
+        color: rgb(12, 120, 12);
+    }
+    .profile{
+        display: flex;
+        height: 4rem;
+        width: 5rem;
+        color: green;
+    }
+    .div-profile{
+        display: flex;
+        flex-direction: column;
+        height: 6rem;
+        width: 22rem;
+        background: rgb(214, 214, 214);
+        color: black;
+        position: absolute;
+        align-items: start;
+        top: 5rem;
+        z-index: 300;
+        gap: 15px;
+        left: 25rem;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .div-profile span{
+        cursor: pointer;
+    }
+}
+
+
+
