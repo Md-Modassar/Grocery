@@ -1,0 +1,82 @@
+.account-container{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.account{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 25%;
+    background: gainsboro;
+    align-items: center;
+    justify-content: start;
+}
+.account-titele{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.account-name-div{
+
+}
+.account-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+@media (max-width:700px) {
+    .account-container{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .account{
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        width: 60%;
+        background: gainsboro;
+        align-items: center;
+        justify-content: start;
+    }
+    .account-titele{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .account-name-div{
+    
+    }
+    .account-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+}
+
+@media (min-width:700px) and (max-width:1024px){
+    .account{
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        width: 60%;
+        background: gainsboro;
+        align-items: center;
+        justify-content: start;
+    }
+}

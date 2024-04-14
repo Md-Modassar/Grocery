@@ -115,7 +115,7 @@ const Header = ({onSearch}) => {
       
     {
       menu &&(<div className='div-profile'>
-       <span>My Account</span>
+       <Link to="/account" style={{textDecoration:"none",color:"black"}}><span>My Account</span></Link> 
        <Link to="/order" style={{textDecoration:"none",color:"black"}}><span>My Order</span></Link> 
       <span onClick={handleLogout}>LogOut</span>
     </div>)

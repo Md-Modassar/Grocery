@@ -14,6 +14,7 @@ import MyCart from './components/Mycart/MyCart';
 import Checkout from './pages/checkout/Checkout';
 import Order from './pages/order/Order';
 import ProdectCategory from './pages/productcategory/ProdectCategory';
+import Account from './pages/Account/Account';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path='/checkout/:amount' element={<Checkout/>} />
       <Route path='/order' element={<Order/>}/>
       <Route path='/product-category/:category' element={<ProdectCategory/>} />
+      <Route path='/account' element={<Account/>}/>
       
 
      </Routes>
