@@ -4,6 +4,7 @@ import Header from '../../components/header/Header'
 import axios from 'axios'
 import Orderproduct from '../../components/orderproduct/Orderproduct'
 import data from "../../components/data/data"
+import { BASE_URL } from '../../server/server'
 
 const Order = () => {
     const [orderdata,setOrderdata]=useState([])
@@ -16,7 +17,7 @@ const Order = () => {
     const userid= data1.emailexist._id
     const getorder=async()=>{
         try{
-          const result=await axios.get(`http://localhost:8080/order/${ userid}`)
+          const result=await axios.get(`${BASE_URL}/order/${ userid}`)
           if(result.data.status)
            {
             setOrderdata(result.data.orders)

@@ -6,9 +6,12 @@ import { CiSearch } from "react-icons/ci";
 import { GiShoppingCart } from "react-icons/gi";
 import { RiAccountCircleLine } from "react-icons/ri";
 import data from "../category/categorydata"
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import MyCart from '../Mycart/MyCart';
+import { BASE_URL } from '../../server/server';
+import Popup from '../popup/Popup';
+
 const Header = ({onSearch}) => {
   const [menu,setMenu]=useState(false)
   const [category,setCategory]=useState(false)
@@ -19,6 +22,9 @@ const Header = ({onSearch}) => {
   
     const [cartdata,setCartdata]=useState([])
     const [isDialogOpen, setIsDialogOpen] = useState(false);
+    const [popup,setPopup]=useState(false)
+    const navigate=useNavigate();
+    const location=useLocation()
 
     const handleOpenDialog = () => {
       setIsDialogOpen(true);
@@ -30,6 +36,14 @@ const Header = ({onSearch}) => {
         return <h1>No item</h1>;
       }
     };
+
+    const handleLogout = () => {
+
+      localStorage.removeItem('auth')
+      setPopup(!popup)
+      navigate(location.state||"/")
+      
+    }
     
   
     const handleCloseDialog = () => {
@@ -37,7 +51,7 @@ const Header = ({onSearch}) => {
     };
     const getcarts=async()=>{
       try{
-          const result=await axios.get("http://localhost:8080/cart",{
+          const result=await axios.get(`${BASE_URL}/cart`,{
            
           params: {
             userid: data1.emailexist._id
@@ -62,7 +76,7 @@ const Header = ({onSearch}) => {
   return (
     <div className='header'>
     <div className='header-left'>
-      <Link to="/"><img src={logo}  alt=''/></Link>
+      <Link to="/home"><img src={logo}  alt=''/></Link>
       <div className='cate'>
         <TbCategory className='icon1' onClick={()=>setCategory(!category)}/>
         <span>Category</span>
@@ -103,10 +117,11 @@ const Header = ({onSearch}) => {
       menu &&(<div className='div-profile'>
        <span>My Account</span>
        <Link to="/order" style={{textDecoration:"none",color:"black"}}><span>My Order</span></Link> 
-      <span>LogOut</span>
+      <span onClick={handleLogout}>LogOut</span>
     </div>)
 }
 <MyCart isOpen={isDialogOpen} onClose={handleCloseDialog} children={cartdata}/>
+{popup &&<Popup value={popup} h="Logout Sccussfully"/>}
     </div>
   )
 }

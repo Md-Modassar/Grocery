@@ -18,9 +18,9 @@ import ProdectCategory from './pages/productcategory/ProdectCategory';
 function App() {
   return (
      <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/Home' element={<Home/>}/>
       <Route path='/signup' element={<Signup/>}/>
-      <Route path='/login' element={<Login/>}/>
+      <Route path='/' element={<Login/>}/>
       <Route path='/checkout/:amount' element={<Checkout/>} />
       <Route path='/order' element={<Order/>}/>
       <Route path='/product-category/:category' element={<ProdectCategory/>} />

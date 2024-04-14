@@ -3,6 +3,7 @@ import "./singup.css"
 import logo from "../../images/logo8.png"
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { BASE_URL } from '../../server/server'
 
 const Signup = () => {
    const [input,setInput]=useState({
@@ -23,7 +24,7 @@ const Signup = () => {
 
    const heandelSubmit=async()=>{
     try{
-      const result=await axios.post('http://localhost:8080/signup',{
+      const result=await axios.post(`${BASE_URL}/signup`,{
         name:input.name,
         email:input.email,
         password:input.password
@@ -31,7 +32,7 @@ const Signup = () => {
       console.log(result)
       if(result.data.status)
       {
-        navigate(location.state||"/login")
+        navigate(location.state||"/")
       }
     }catch(err){
       console.log("went samthing wrong",err.message) 
@@ -53,7 +54,7 @@ const Signup = () => {
      <button onClick={heandelSubmit}>Create an Account</button>
      <div className='s-down-div'>
         <span>Already have account</span>
-        <Link to="/login" style={{textDecoration:"none"}}><span>Click here to Sign in</span></Link>
+        <Link to="/" style={{textDecoration:"none"}}><span>Click here to Sign in</span></Link>
      </div>
         </div>
     

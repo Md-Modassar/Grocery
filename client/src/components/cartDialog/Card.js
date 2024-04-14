@@ -3,6 +3,7 @@ import "./carddialog.css"
 import { GiShoppingCart } from "react-icons/gi";
 import axios from 'axios';
 import Popup from '../popup/Popup';
+import { BASE_URL } from '../../server/server';
 
 const Card = ({children,price}) => {
     const [count,setCount]=useState(1)
@@ -15,7 +16,7 @@ const Card = ({children,price}) => {
   
     const addcart=async()=>{
         try{
-           const result=await axios.post("http://localhost:8080/cart",{
+           const result=await axios.post(`${BASE_URL}/cart`,{
               userid:authdata1.emailexist._id,
               amount:amount,
               quantity:count,

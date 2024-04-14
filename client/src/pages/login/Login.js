@@ -2,11 +2,14 @@ import React, { useState } from 'react'
 import logo from "../../images/logo8.png"
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { BASE_URL } from '../../server/server'
+import Popup from '../../components/popup/Popup'
 const Login = () => {
   const [input,setInput]=useState({
     email:"",
     password:""
   })
+  const [popup,setPopup]=useState(false)
 
   const navigate=useNavigate();
   const location=useLocation()
@@ -20,7 +23,7 @@ const Login = () => {
 
   const heandelSubmit=async()=>{
     try{
-      const result=await axios.post('http://localhost:8080/login',{
+      const result=await axios.post(`${BASE_URL}/login`,{
         email:input.email,
         password:input.password
       })
@@ -28,13 +31,15 @@ const Login = () => {
       if(result.data.status)
        {
         localStorage.setItem('auth',JSON.stringify(result.data))
-        navigate(location.state||'/')
+        navigate(location.state||'/home')
+       }else{
+        setPopup(!popup)
        }
     }catch(err){
        console.log("error===",err.response.data)
        // status=err.response.data.status
       ///  console.log("login--",status)
-       // openPopUp()
+      setPopup(!popup)
        }
   }
   return (
@@ -55,7 +60,7 @@ const Login = () => {
    <Link to="/signup" style={{textDecoration:"none"}}><span>Click here to create new account</span></Link> 
  </div>
     </div>
-
+    {popup &&<Popup value={popup} h="samething went to wrong"/>}
 </div>
   )
 }

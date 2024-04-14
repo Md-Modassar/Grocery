@@ -5,6 +5,7 @@ import { useParams,useNavigate,useLocation } from 'react-router-dom'
 import axios from 'axios'
 import data from "../../components/data/data"
 import Popup from '../../components/popup/Popup'
+import { BASE_URL } from '../../server/server'
 
 
 const Checkout = () => {
@@ -14,6 +15,7 @@ const Checkout = () => {
   const location =useLocation()
   const [cond,setCond]=useState(false)
   const [popup,setPopup]=useState(false)
+  
 
  // console.log(amount)
   let totalamount=parseInt(amount)
@@ -24,7 +26,7 @@ const Checkout = () => {
 
   const getcarts=async()=>{
     try{
-        const result=await axios.get("http://localhost:8080/cart",{
+        const result=await axios.get(`${BASE_URL}/cart`,{
          
         params: {
           userid: data1.emailexist._id
@@ -57,7 +59,7 @@ const Checkout = () => {
 
   const createorder=async()=>{
     try{
-      const result=await axios.post("http://localhost:8080/order",{
+      const result=await axios.post(`${BASE_URL}/order`,{
        userid:data1.emailexist._id,
        products:productid,
        amount:amount

@@ -5,6 +5,7 @@ import axios from 'axios';
 //import MyCart from './MyCart';
 import data from "../data/data"
 import Popup from '../popup/Popup';
+import { BASE_URL } from '../../server/server';
 
 const CartData = () => {
     //console.log(item.name,quantity,amount,cartid)
@@ -17,7 +18,7 @@ const CartData = () => {
 
     const getcarts=async()=>{
       try{
-          const result=await axios.get("http://localhost:8080/cart",{
+          const result=await axios.get(`${BASE_URL}/cart`,{
            
           params: {
             userid: data1.emailexist._id
@@ -45,7 +46,7 @@ const CartData = () => {
      
     const cartdelet=async({cartid})=>{
       try{
-         const result=await axios.delete(`http://localhost:8080/cart/${cartid}`)
+         const result=await axios.delete(`${BASE_URL}/cart/${cartid}`)
          if(result.data.status)
            {
             setPopup(!popup)

@@ -7,8 +7,21 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const catdata=[
+    "Vegetables",
+     "Fruits",
+    "Milk & Juice",
+    "Personal Core",
+    "Bakery",
+    "Grains",
+    "Spicies",
+    "Oil",
+    "Cookies",
+    "Chicken & Eggs"
+  ]
   return (
     
   
@@ -16,16 +29,11 @@ const Footer = () => {
       <div className='footer-category'>
         <span className='footer-cate-title'>Popular Category</span>
         <div className='footer-category-container'>
-           <span>Vegetable</span>
-           <span>Fruits</span>
-           <span>Milk & Juice</span>
-           <span>Personal Core</span>
-           <span>Bakery</span>
-           <span>Grains</span>
-           <span>Spicies</span>
-           <span>Oil</span>
-           <span>Cookies</span>
-           <span>Chicken & Eggs</span>
+           {
+            catdata.map((cate)=>(
+              <Link to={`/product-category/${cate}`} style={{textDecoration:"none"}}><span>{cate}</span></Link> 
+            ))
+           }
         </div>
 
       </div>
