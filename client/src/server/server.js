@@ -1,1 +1,1 @@
-export const BASE_URL='https://grocery-2.onrender.com'
+export const BASE_URL='https://localhost:8082'
